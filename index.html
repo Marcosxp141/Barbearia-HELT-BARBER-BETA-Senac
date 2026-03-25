@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<html>
 
 <head>
-      <meta charset="utf-8">
-      <title>Babearia Helt Barber</title>
+    <meta charset="UTF-8">
+    <title>Barbearia Helt Barber</title>
+
+    <link rel="stylesheet" href="estile.css">
+</head>
 
 <body>
-      <h1>Helt Barber</h1>
-      <h2>Formulario de Cadastro</h2>
 
-      <form>
-            <p>
+    <h1>Helt Barber</h1>
 
-                  <label for="cadastro_nome">Nome completo</label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
 
-                  <input id="cadastro_nome" type="text">
-            </p>
-            <p>
-                  <label for="cadastro_telefone">Telefone</label>
-                  <input id="cadastro_telefone" type="text">
-            </p>
-            <p>
-                  <label for="cadastro_email">Email</label>
-                  <input id="cadastro_email" type="text">
-            </p>
-            <p>
-                  <label for="cadastro_senha">Senha</label>
-                  <input id="cadastro_senha" type="password">
-            </p>
+    <h2>Formulário de cadastro</h2>
 
-            <p>
+    <form>
+        <p>
+            <label for="cadastro_nome">Nome completo:</label>
+            <input id="cadastro_nome" type="text" placeholder="Nome completo" required></input>
+        </p>
+        <p>
+            <label for="cadastro_email">E-mail:</label>
+            <input id="cadastro_email" type="email" placeholder="nome@dominio.com.br" required>
+        </p>
+        <p>
+            <label for="cadastro_telefone">Telefone:</label>
+            <input id="cadastro_telefone" type="text" placeholder="(27) 99999-9999" required>
+        </p>
+        <p>
+
+        <p>
+            <label for="cadastro_senha">Senha:</label>
+            <input id="cadastro_senha" type="password">
+        </p>
+        <p>
+            <label for="cadastro_senha_confirm">Confirme a senha:</label>
+            <input id="cadastro_senha_confirm" type="password">
+        </p>
+
+        <p>
+            <button type="reset" id="btn-limpar" class="btn">Limpar</button>
+            <button type="submit" id="btn-salvar" class="btn">Salvar</button>
+        </p>
+    </form>
+
+    <hr>
+    <form>
+        <h2>Faça sua Avaliação</h2>
 
 
-                  <button type="reset">Limpar</button>
 
-                  <button type="submit">Cadastrar</button>
 
-            </p>
-      </form>
-      <hr>
-      <h2>Usuarios Cadastrados</h2>
-      <table>
+        <tr>
+            <td>Pedro</td>
+            <td>Avaliação</td>
+            <textarea></textarea>
+            <fieldset>
+                <input id="estrela_pt" name="Estrela" type="checkbox" value="pt">
+                <label for="estrela_pt">1 Estrela</label>
+                <input id="estrela_pt" name="Estrela" type="checkbox" value="pt">
+                <label for="estrela_pt">2 Estrela</label>
+                <input id="estrela_pt" name="Estrela" type="checkbox" value="pt">
+                <label for="estrela_pt">3 Estrela</label>
+                <input id="estrela_pt" name="Estrela" type="checkbox" value="pt">
+                <label for="estrela_pt">4 Estrela</label>
+                <input id="estrela_pt" name="Estrela" type="checkbox" value="pt">
+                <label for="estrela_pt">5 Estrela</label>
+        </tr>
+        </fieldset>
 
-            <tr>
-                  <th>Nome</th>
-                  <th>Email</th>
-                  <th>Telefone</th>
-                  <th>Ação</th>
-            </tr>
-            <tr>
-
-                  <td>João Paulo</td>
-                  <td>joaopaulo.com.br</td>
-                  <td>279999111111</td>
-                  <td>Editar Excluir</td>
-
-            </tr>
-      </table>
-
+    </form>
 </body>
-
 
 </html>
