@@ -47,7 +47,7 @@ nav ul li {
     margin: 0 10px;
     flex-direction: right;
     flex-wrap: wrap;
-   
+
 
 }
 
@@ -105,8 +105,9 @@ nav ul li a:hover {
     background-color: #f39c12;
     color: #fff;
 }
+
 h3 {
-   display: flex;
+    display: flex;
     justify-content: left;
     background-color: #ffc116;
     margin: 10px;
@@ -115,6 +116,7 @@ h3 {
     margin-bottom: 30px;
     font-size: 28px;
 }
+
 div.avaliações {
     display: flex;
     flex-direction: right;
